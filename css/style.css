@@ -12,6 +12,7 @@
     --white-blue-color: #edeef0;
     --blue-color: #002765;
     --red-color: #ff5945;
+    --grey-color: #555;
 }
 
 .container {
@@ -93,4 +94,30 @@ ul li::before {
     top: 50%;
     left: 8px;
     transform: translateY(-50%);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: var(--grey-color);
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: var(--white-blue-color);
+}
+
+.checked {
+    color: var(--grey-color);
+    text-decoration: line-through;
+}
+
+.checked::before {
+    content: "";
+    background-image: url(../images/checked.png);
 }
